@@ -11,11 +11,16 @@
         android:id="@+id/httpCilendId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HttpClient"/>
+        android:text="@string/httpClient" />
     <Button
         android:id="@+id/httpConnectionId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HttpUrlConnection"/>
+        android:text="@string/httpURLConnect"/>
+    <Button
+        android:id="@+id/OkhttpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/httpOKhttp"/>
 
 </LinearLayout>

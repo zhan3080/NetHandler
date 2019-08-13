@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private Button httpCilentButton;
     private Button httpConnectionButton;
+    private Button httpOkHttpButton;
     private HttpUrlConnectionImp httpUrlConnect;
 
     @Override
@@ -32,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 httpUrlConnect = new HttpUrlConnectionImp();
                 httpUrlConnect.httpGet("http://www.baidu.com");
                 Log.i(TAG,"Click httpConnectionButton");
+            }
+        });
+        httpOkHttpButton = (Button)findViewById(R.id.OkhttpId);
+        httpOkHttpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HttpOkhttp okhttp = new HttpOkhttp();
+                okhttp.httpGetAsync();
+                Log.i(TAG,"Click httpOkHttpButton");
             }
         });
     }
